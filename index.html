@@ -7,17 +7,35 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #F2F6D0; /* Color de fondo claro */
+      background-color: #F2F6D0;
       color: #333;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #D98324; /* Naranja intenso */
+      background-color: #D98324; 
       padding: 20px;
       text-align: center;
       color: white;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
     }
 
     h1 {
@@ -28,7 +46,7 @@
     main {
       padding: 40px;
       text-align: center;
-      background-color: #EFDCAB; /* Amarillo claro */
+      background-color: #EFDCAB;
     }
 
     .content-section {
@@ -60,11 +78,15 @@
     ul {
       list-style-type: none;
       padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     ul li {
       font-size: 1.1em;
-      margin: 10px 0;
+      margin: 10px;
+      flex: 1 1 auto;
     }
 
     ul li::before {
@@ -72,12 +94,18 @@
       color: #D98324;
       font-weight: bold;
     }
-
   </style>
 </head>
 <body>
   <header>
     <h1>Research and Interests</h1>
+    <nav>
+      <ul>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#programs">Programs</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
