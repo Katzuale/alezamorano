@@ -3,59 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página en GitHub</title>
+  <title>Research and Interests</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f0f0f0 25%, #ffffff 75%);
+      font-family: Arial, sans-serif;
+      background-color: #F2F6D0; /* Color de fondo claro */
       color: #333;
-      text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 100vh;
     }
+
+    header {
+      background-color: #D98324; /* Naranja intenso */
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
     h1 {
-      color: #007bff;
-      font-size: 3em;
-      margin-bottom: 20px;
-      animation: fadeIn 2s ease-in;
+      margin: 0;
+      font-size: 2.5em;
     }
-    p {
+
+    main {
+      padding: 40px;
+      text-align: center;
+      background-color: #EFDCAB; /* Amarillo claro */
+    }
+
+    .content-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .intro-text {
       font-size: 1.2em;
-      margin-bottom: 40px;
-      animation: fadeIn 3s ease-in;
+      line-height: 1.6em;
+      color: #333;
     }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 1em;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      animation: fadeIn 4s ease-in;
+
+    .highlight {
+      font-weight: bold;
+      color: #D98324;
     }
-    .button:hover {
-      background-color: #0056b3;
+
+    footer {
+      background-color: #D98324;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
+
+    ul li {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #D98324;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
-  <h1>¡Bienvenido a mi página en GitHub!</h1>
-  <p>Esta es una página simple creada con GitHub Pages.</p>
-  <a href="https://github.com" class="button">Visitar mi GitHub</a>
+  <header>
+    <h1>Research and Interests</h1>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <p class="intro-text">
+        I am a PhD student focused on the study of <span class="highlight">solar flares</span> and their nonlinear dynamics using complex network tools.
+      </p>
+
+      <h2>Research Areas</h2>
+      <ul>
+        <li>Nonlinear Dynamics</li>
+        <li>Complex Systems</li>
+        <li>Statistical Mechanics</li>
+        <li>Plasma Physics</li>
+        <li>Solar Physics</li>
+        <li>Turbulence</li>
+        <li>Chaos</li>
+        <li>Active Matter</li>
+        <li>Quantum Chaos</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Alejandro Zamorano
+  </footer>
 </body>
 </html>
