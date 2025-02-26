@@ -75,24 +75,26 @@
       width: 100%;
     }
 
+    /* Ajustes para la lista indentada */
     ul {
       list-style-type: none;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      margin: 20px 0;
     }
 
     ul li {
       font-size: 1.1em;
-      margin: 10px;
-      flex: 1 1 auto;
+      margin: 10px 0;
+      padding-left: 20px; /* Indentación */
+      position: relative;
     }
 
     ul li::before {
       content: "• ";
       color: #D98324;
       font-weight: bold;
+      position: absolute;
+      left: 0;
     }
   </style>
 </head>
@@ -104,6 +106,8 @@
         <li><a href="#articles">Articles</a></li>
         <li><a href="#courses">Courses</a></li>
         <li><a href="#programs">Programs</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
